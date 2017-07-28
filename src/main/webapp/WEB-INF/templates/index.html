@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+    <head>
+        <meta content = "text/html;charset = utf-8"></meta>
+        <title>datatables学习</title>
+         <!--样式文件-->
+        <link rel="stylesheet" type="text/css" th:href="@{/css/jquery.dataTables.min.css}"/>
+        <!--jquery js-->
+        <script type = "text/javascript" th:src="@{/js/jquery-3.1.1.min.js}"></script>
+        <!--DataTables 核心 js-->
+        <script type = "text/javascript" th:src="@{/js/jquery.dataTables.min.js}"></script>
+        <script>
+        $(function () {
+            $('#exampletable').DataTable({
+            	
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <table id = "exampletable" class = "display">
+           <thead>
+               <tr>
+                   <th>Code</th>
+                   <th>Name</th>
+                   <th>Price</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>001</td><td>name1</td><td>2323</td>
+               </tr>
+               <tr>
+                   <td>002</td><td>name2</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>003</td><td>name3</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>004</td><td>name4</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>005</td><td>name5</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>006</td><td>name6</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>007</td><td>name7</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>008</td><td>name8</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>009</td><td>name9</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>010</td><td>name10</td><td>4612</td>
+               </tr>
+               <tr>
+                   <td>011</td><td>name11</td><td>4612</td>
+               </tr>
+           </tbody>
+        </table>
+    </body>
+</html>
